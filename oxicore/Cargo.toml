@@ -1,0 +1,23 @@
+[package]
+
+name = "oxicore"
+
+version = "0.1.0"
+
+edition = "2021"
+
+[dependencies]
+
+chrono = "^0.4.38"
+
+rand = "^0.8.5"
+
+zstd = "^0.12.4"
+
+faster-hex = "0.9.0"
+
+[profile.dev]
+
+opt-level = 0
+
+debug = false

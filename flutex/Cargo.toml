@@ -1,0 +1,17 @@
+[package]
+
+name = "flutex"
+
+version = "0.1.0"
+
+edition = "2021"
+
+[dependencies]
+
+nom = "^8.0.0"
+
+[profile.dev]
+
+opt-level = 0
+
+debug = false
