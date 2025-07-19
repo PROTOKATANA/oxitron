@@ -1,1 +1,35 @@
+syntax = "proto3" ;
 
+package registro ;
+
+service Registro { rpc Patente(Infocuenta) returns (Estado) ; }
+
+message Infocuenta {
+
+	string apodo = 1 ;
+
+	string codigo = 2 ;
+
+	string clave = 3 ;
+
+	string verificacion = 4 ;
+
+	string prefijo = 5 ;
+
+	string telefono = 6 ;
+
+	string codetext = 7 ;
+
+	bool masculino = 8 ;
+
+	bool femenino = 9 ;
+
+	string lenguaje = 10 ;
+
+	string pin = 11 ;
+
+	string identificador_operacional = 12 ;
+
+}
+
+message Estado { bool saje = 1 ; }

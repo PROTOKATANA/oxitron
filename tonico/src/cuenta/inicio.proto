@@ -1,1 +1,23 @@
+syntax = "proto3" ;
 
+package inicio ;
+
+service Inicio { rpc Acceso(Datasesion) returns (Estado) ; }
+
+message Datasesion {
+
+	string apodo = 1 ;
+
+	string codigo = 2 ;
+
+	string clave = 3 ;
+
+	string codetext = 4 ;
+
+	string pin = 5 ;
+
+	string identificador_operacional = 6 ;
+
+}
+
+message Estado { bool saje = 1 ; }
