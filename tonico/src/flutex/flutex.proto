@@ -1,0 +1,9 @@
+syntax = "proto3" ;
+
+package flutex ;
+
+service ModeloLLM { rpc Mensaje(Pregunta) returns(stream Respuesta) ; }
+
+message Pregunta { bytes cadena = 1 ; }
+
+message Respuesta { bytes pedazo = 1 ; }
