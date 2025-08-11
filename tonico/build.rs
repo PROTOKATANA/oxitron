@@ -28,13 +28,19 @@ fn protoxi() {
 
 	let cuenta : PathBuf = raiz.join("src").join("cuenta") ;
 
+	let flutex : PathBuf = raiz.join("src").join("flutex") ;
+
 	let inicio = vec![cuenta.join("inicio.proto").to_string_lossy().into_owned()] ;
 
 	let registro = vec![cuenta.join("registro.proto").to_string_lossy().into_owned()] ;
 
+	let modelo = vec![flutex.join("flutex.proto").to_string_lossy().into_owned()] ;
+
 	proto(&inicio , &cuenta , &raiz) ;
 
 	proto(&registro , &cuenta , &raiz) ;
+
+	proto(&modelo , &flutex , &raiz) ;
 
 }
 
